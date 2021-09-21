@@ -158,8 +158,5 @@ A more comprehensive resource to learn about Turtlebot is: http://emanual.roboti
         rosrun planning move_tbot3.py
 
 
-## Demo
-
-Insert gif or link to demo
 
   
