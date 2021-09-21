@@ -45,7 +45,7 @@ You can use applications like VirtualBox to create a virtual machine. Some relev
 
 We recommend installing Ubuntu on your system (this can be done alongside Windows) as running virtual machine is generally slower than using Ubuntu installed on your system.
 
-VM Image: https://drive.google.com/drive/folders/11mrJz5N1uUgGPOqgcoqJQzb_gC1uuT1p?usp=sharing 
+- VM Image: https://drive.google.com/drive/folders/11mrJz5N1uUgGPOqgcoqJQzb_gC1uuT1p?usp=sharing 
 
 #### ROS
 ROS is an open-source, meta-operating system for the robots. It provides the services one would expect from an operating system including hardware abstraction, low-level device control, implementation of commonly-used functionality, message-passing between processes, and package management. It also provides tools and libraries for obtaining, building, writing, and running code across multiple computers.
