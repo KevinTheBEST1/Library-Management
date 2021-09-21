@@ -11,7 +11,7 @@ Refer the image below to see how a sample maze environment looks like. The turtl
 ![books_n_bins](https://user-images.githubusercontent.com/74253717/133837193-faa81f00-af5b-4973-a552-e79427c196a9.png)
 
 Some of the terms that we use throughout the assignment are:
-1.	Book and Bin Size: There are two sizes for the books and bins. Large and Small.
+-	Book and Bin Size: There are two sizes for the books and bins. Large and Small.
 2.	Number of Subjects: This is the number of distinct subjects. This number can vary between 1 and 10 inclusive. For each of the subject, two different bins will be generated; large and small.
 3.	Number of Books: This is the number of books you have of each subject in each size. This number can vary between 1 and 5 inclusive. So actual number of books in the whole environment is number of books * number of subjects * 2.
 4.	Load Location: Every book and bin has 2 load locations. For a book it is the set of locations from where it can be picked by the TurtleBot. For a bin it is the set of locations from where the TurtleBot can place the books into this bin.
