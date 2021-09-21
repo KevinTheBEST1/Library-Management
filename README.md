@@ -12,9 +12,9 @@ Refer the image below to see how a sample maze environment looks like. The turtl
 
 Some of the terms that we use throughout the assignment are:
 -	Book and Bin Size: There are two sizes for the books and bins. Large and Small.
-2.	Number of Subjects: This is the number of distinct subjects. This number can vary between 1 and 10 inclusive. For each of the subject, two different bins will be generated; large and small.
-3.	Number of Books: This is the number of books you have of each subject in each size. This number can vary between 1 and 5 inclusive. So actual number of books in the whole environment is number of books * number of subjects * 2.
-4.	Load Location: Every book and bin has 2 load locations. For a book it is the set of locations from where it can be picked by the TurtleBot. For a bin it is the set of locations from where the TurtleBot can place the books into this bin.
+-	Number of Subjects: This is the number of distinct subjects. This number can vary between 1 and 10 inclusive. For each of the subject, two different bins will be generated; large and small.
+-	Number of Books: This is the number of books you have of each subject in each size. This number can vary between 1 and 5 inclusive. So actual number of books in the whole environment is number of books * number of subjects * 2.
+-	Load Location: Every book and bin has 2 load locations. For a book it is the set of locations from where it can be picked by the TurtleBot. For a bin it is the set of locations from where the TurtleBot can place the books into this bin.
 
 
 
@@ -28,19 +28,19 @@ Grid visible in Gazebo
 
 This section covers the overall setps to setup the system for library management
 ### Requirements
-    Ubuntu 16.04
+- Ubuntu 16.04
 You can use either of the two following options:
-   1. Install Ubuntu on PC: 
+   - Install Ubuntu on PC: 
    You can download Ubutnu from here: http://releases.ubuntu.com/16.04
 Learn how to install Ubuntu at https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop-1604.
 If you are looking to install Ubuntu on UEFI systems, you can get help at https://help.ubuntu.com/community/UEFI
 
-2. Use Ubuntu on virtual machine:
+- Use Ubuntu on virtual machine:
 You can use applications like VirtualBox to create a virtual machine. Some relevant tutorials are:
 
-2.1 How to create a new VM?
+    - How to create a new VM?
 
-2.2 How to import an existing VM?
+    - How to import an existing VM?
 
 We recommend installing Ubuntu on your system (this can be done alongside Windows) as running virtual machine is generally slower than using Ubuntu installed on your system.
 
@@ -70,14 +70,14 @@ You can follow the instructions given at: http://wiki.ros.org/catkin/Tutorials/c
 To set up Turtlebot3 in Gazebo, Follow the following steps:
    
 
-1.  You will need to first clone the turtlebot3_msgs module for Turtlebot3. You can find this on https://github.com/ROBOTIS-GIT/turtlebot3_msgs. You will need to clone this repository and place at catkin_ws/src. The commands to do this are:
+-  You will need to first clone the turtlebot3_msgs module for Turtlebot3. You can find this on https://github.com/ROBOTIS-GIT/turtlebot3_msgs. You will need to clone this repository and place at catkin_ws/src. The commands to do this are:
     
         cd ~/catkin_ws/src
 git clone
         
      https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 
-2. Now you will need to clone mandatory modules to use Turtlebot3 with ROS. You can find this on https://github.com/ROBOTIS-GIT/turtlebot3. You will need to clone this repsoitory to same place at catkin_ws/src. The commands to do this are:
+- Now you will need to clone mandatory modules to use Turtlebot3 with ROS. You can find this on https://github.com/ROBOTIS-GIT/turtlebot3. You will need to clone this repsoitory to same place at catkin_ws/src. The commands to do this are:
 
         cd ~/catkin_ws/src
     
@@ -85,7 +85,7 @@ git clone
 
      https://github.com/ROBOTIS-GIT/turtlebot3.git
 
-3. The last step is to clone the Turtlebot3 simulators which you can obtain at https://github.com/ROBOTIS-GIT/turtlebot3_simulations. The commands to do this are:
+- The last step is to clone the Turtlebot3 simulators which you can obtain at https://github.com/ROBOTIS-GIT/turtlebot3_simulations. The commands to do this are:
 
         cd ~/catkin_ws/src
 git clone 
@@ -102,16 +102,16 @@ A more comprehensive resource to learn about Turtlebot is: http://emanual.roboti
 ### Using Turtlebot3
 
 To load the environment, you need to do the following:
-1.	Source setup.bash file.
+-	Source setup.bash file.
         
     
         source ~/catkin_ws/devel/setup.bash
     This has to be done every time you open a new terminal as setup.bash holds important environment variables. This also has use in overlaying multiple workspaces, which you may ignore as of now.
-2. Set TurtleBot model. You have to set one of the three TurtleBot3 models: burger, waffle, or waffle_pi. Lets set it to burger for this demo.
+- Set TurtleBot model. You have to set one of the three TurtleBot3 models: burger, waffle, or waffle_pi. Lets set it to burger for this demo.
 
         export TURTLEBOT3_MODEL=burger
     This step also needs to be executed every time you start a new terminal.
-3. Launching a turtlebot environment.
+- Launching a turtlebot environment.
 
 
         roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
@@ -130,30 +130,30 @@ After this you just need to source the bashrc file once
 Play around with the turtlebot and try various environments given in the turtlebot tutorial at http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/.   
 
 ### Setting up Planning Folder
-1.	Download and setup ROS
-2.	Clone the “planning” folder from Github to 
+-	Download and setup ROS
+-	Clone the “planning” folder from Github to 
     
         ~/catkin_ws/src/
         (cd ~/catkin_ws/src && git clone https://github.com/AAIR-lab/planning.git // your github link)
 
-3.	Change permission of all scripts in planning folder to make them executable.
+-	Change permission of all scripts in planning folder to make them executable.
     
         chmod u+x ~/catkin_ws/src/planning/scripts/*.py
 
-4.	  
+-	  
         chmod u+x ~/catkin_ws/src/planning/env_setup.sh &&  /catkin_ws/src/planning/env_setup.sh
 
 ### Moving TurtleBot
-1.	New Terminal:
+-	New Terminal:
         
          roscore
-2.	New Terminal((located at 
+-	New Terminal((located at 
 
         ~/catkin_ws/src/planning/scripts): rosrun planning server.py -sub 2 -b 2
-3.	New Terminal: 
+-	New Terminal: 
 
         roslaunch planning maze.launch
-4.	
+-	
         rosrun planning move_tbot3.py
 
 
