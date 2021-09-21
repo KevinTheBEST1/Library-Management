@@ -141,7 +141,7 @@ A more comprehensive resource to learn about Turtlebot is: http://emanual.roboti
     
         chmod u+x ~/catkin_ws/src/planning/scripts/*.py
 
--	  
+	  
         chmod u+x ~/catkin_ws/src/planning/env_setup.sh &&  /catkin_ws/src/planning/env_setup.sh
 
 ### Moving TurtleBot
@@ -154,7 +154,7 @@ A more comprehensive resource to learn about Turtlebot is: http://emanual.roboti
 -	New Terminal: 
 
         roslaunch planning maze.launch
--	
+	
         rosrun planning move_tbot3.py
 
 
