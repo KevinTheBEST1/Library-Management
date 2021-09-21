@@ -92,10 +92,10 @@ To set up Turtlebot3 in Gazebo, Follow the following steps:
       git clone 
 
         https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-Once you clone everything move to your catkin_ws and execute command catkin_make to build all the modules.
+ Once you clone everything move to your catkin_ws and execute command catkin_make to build all the modules.
 
-         cd ~/catkin_ws
-         catkin_make
+        cd ~/catkin_ws
+        catkin_make
 
 Do the tutorials on Turtlebot3 simulator with Gazebo at: http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/.
 A more comprehensive resource to learn about Turtlebot is: http://emanual.robotis.com/docs/en/platform/turtlebot3/learn/.
