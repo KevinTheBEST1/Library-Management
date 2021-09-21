@@ -74,7 +74,7 @@ To set up Turtlebot3 in Gazebo, Follow the following steps:
 -  You will need to first clone the turtlebot3_msgs module for Turtlebot3. You can find this on https://github.com/ROBOTIS-GIT/turtlebot3_msgs. You will need to clone this repository and place at catkin_ws/src. The commands to do this are:
     
         cd ~/catkin_ws/src
-      git clone
+         git clone
         
         https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 
@@ -82,20 +82,20 @@ To set up Turtlebot3 in Gazebo, Follow the following steps:
 
         cd ~/catkin_ws/src
     
-git clone
+      git clone
 
-     https://github.com/ROBOTIS-GIT/turtlebot3.git
+        https://github.com/ROBOTIS-GIT/turtlebot3.git
 
 - The last step is to clone the Turtlebot3 simulators which you can obtain at https://github.com/ROBOTIS-GIT/turtlebot3_simulations. The commands to do this are:
 
         cd ~/catkin_ws/src
-git clone 
+      git clone 
 
-    https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+        https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 Once you clone everything move to your catkin_ws and execute command catkin_make to build all the modules.
 
-    cd ~/catkin_ws
-    catkin_make
+        cd ~/catkin_ws
+        catkin_make
 
 Do the tutorials on Turtlebot3 simulator with Gazebo at: http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/.
 A more comprehensive resource to learn about Turtlebot is: http://emanual.robotis.com/docs/en/platform/turtlebot3/learn/.
