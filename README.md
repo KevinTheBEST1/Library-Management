@@ -29,6 +29,7 @@ Grid visible in Gazebo
 This section covers the overall setps to setup the system for library management
 ### Requirements
 - Ubuntu 16.04
+
 You can use either of the two following options:
    - Install Ubuntu on PC: 
    You can download Ubutnu from here: http://releases.ubuntu.com/16.04
@@ -62,8 +63,8 @@ Do the beginner level ROS Tutorials (Python version only) which are available at
 
 This includes tutorials for installing and configuring ROS. For this assignment install and configure ROS and go over beginner’s tutorials for python to make yourself familier with ROS. After this homerwork, students should be able to write simple service-client functionalities and simple subscriber-publisher on their.
 
-### Setting Up Turtlebot-3
-Once you install ROS, you will need to set up Turtlebot3 with Gazebo simulator. If you have installed ROS successfully, Gazebo should already be installed. To set up the Turtlebot-3, you will need to first initialize the catkin workspace.
+### Setting Up Turtlebot3
+Once you install ROS, you will need to set up Turtlebot3 with Gazebo simulator. If you have installed ROS successfully, Gazebo should already be installed. To set up the Turtlebot3, you will need to first initialize the catkin workspace.
 
 You can follow the instructions given at: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
 
@@ -73,9 +74,9 @@ To set up Turtlebot3 in Gazebo, Follow the following steps:
 -  You will need to first clone the turtlebot3_msgs module for Turtlebot3. You can find this on https://github.com/ROBOTIS-GIT/turtlebot3_msgs. You will need to clone this repository and place at catkin_ws/src. The commands to do this are:
     
         cd ~/catkin_ws/src
-git clone
+      git clone
         
-     https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+        https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 
 - Now you will need to clone mandatory modules to use Turtlebot3 with ROS. You can find this on https://github.com/ROBOTIS-GIT/turtlebot3. You will need to clone this repsoitory to same place at catkin_ws/src. The commands to do this are:
 
