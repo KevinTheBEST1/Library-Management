@@ -19,14 +19,14 @@ Some of the terms that we use throughout the assignment are:
 
 
 ## Screenshots
--This is the library management project visulization
+- This is the library management project visulization
 ![library management](https://user-images.githubusercontent.com/74253717/134047818-4bc977aa-09f0-4247-9d5b-d7ae2492919b.PNG)
-Grid visible in Gazebo
+- Grid visible in Gazebo
 ![grid_actual](https://user-images.githubusercontent.com/74253717/134047817-ae0bdc3d-5da6-41a8-a3d7-0e5627efcd55.png)
 
 ## System setup
 
--This section covers the overall setps to setup the system for library management
+This section covers the overall setps to setup the system for library management
 ### Requirements
 - Ubuntu 16.04
 
