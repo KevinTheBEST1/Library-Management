@@ -102,33 +102,33 @@ A more comprehensive resource to learn about Turtlebot is: http://emanual.roboti
 
 ### Using Turtlebot3
 
-To load the environment, you need to do the following:
--	Source setup.bash file.
+- To load the environment, you need to do the following:
+ -	Source setup.bash file.
         
     
         source ~/catkin_ws/devel/setup.bash
     This has to be done every time you open a new terminal as setup.bash holds important environment variables. This also has use in overlaying multiple workspaces, which you may ignore as of now.
-- Set TurtleBot model. You have to set one of the three TurtleBot3 models: burger, waffle, or waffle_pi. Lets set it to burger for this demo.
+ - Set TurtleBot model. You have to set one of the three TurtleBot3 models: burger, waffle, or waffle_pi. Lets set it to burger for this demo.
 
         export TURTLEBOT3_MODEL=burger
     This step also needs to be executed every time you start a new terminal.
-- Launching a turtlebot environment.
+ - Launching a turtlebot environment.
 
 
         roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
-Moreover, Teleoperation on Gazebo can be performed using the following command. Run this in a new terminal, and don’t forget to perform steps 1 and 2 in this new terminal.
+- Moreover, Teleoperation on Gazebo can be performed using the following command. Run this in a new terminal, and don’t forget to perform steps 1 and 2 in this new terminal.
 
     roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 #### Tip
-If you do not want to execute steps 1 and 2 every time, you can add those commands in your bashrc file.
+- If you do not want to execute steps 1 and 2 every time, you can add those commands in your bashrc file.
     
     gedit ~/.bashrc
 ![library](https://user-images.githubusercontent.com/74253717/134065554-057cfd06-ed49-47e8-bb8d-72b38211a44e.png)
-After this you just need to source the bashrc file once
+- After this you just need to source the bashrc file once
 
     source ~/.bashrc 
     
-Play around with the turtlebot and try various environments given in the turtlebot tutorial at http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/.   
+- Play around with the turtlebot and try various environments given in the turtlebot tutorial at http://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/.   
 
 ### Setting up Planning Folder
 -	Download and setup ROS
