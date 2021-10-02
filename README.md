@@ -18,7 +18,7 @@ Some of the terms that we use throughout the assignment are:
 
 
 
-## Screenshots
+## Environment
 - This is the library management project visulization
 ![library management](https://user-images.githubusercontent.com/74253717/134047818-4bc977aa-09f0-4247-9d5b-d7ae2492919b.PNG)
 - Grid visible in Gazebo
@@ -135,6 +135,8 @@ A more comprehensive resource to learn about Turtlebot is: http://emanual.roboti
 -	Clone the “planning” folder from Github to 
     
         ~/catkin_ws/src/
+-	Git:
+
         (cd ~/catkin_ws/src && git clone https://github.com/AAIR-lab/planning.git // your github link)
 
 -	Change permission of all scripts in planning folder to make them executable.
@@ -145,15 +147,22 @@ A more comprehensive resource to learn about Turtlebot is: http://emanual.roboti
         chmod u+x ~/catkin_ws/src/planning/env_setup.sh &&  /catkin_ws/src/planning/env_setup.sh
 
 ### Moving TurtleBot
--	New Terminal:
+For changing directory:
+	type cd
+
+-	Terminal-1:
         
          roscore
--	New Terminal((located at 
-
-        ~/catkin_ws/src/planning/scripts): rosrun planning server.py -sub 2 -b 2
--	New Terminal: 
+-	Terminal-2:
+	((located at ~/catkin_ws/src/planning/scripts):
+	
+	rosrun planning server.py -sub 2 -b 2
+	
+-	Terminal-3: 
 
         roslaunch planning maze.launch
+
+-	Terminal-4
 	
         rosrun planning move_tbot3.py
 
